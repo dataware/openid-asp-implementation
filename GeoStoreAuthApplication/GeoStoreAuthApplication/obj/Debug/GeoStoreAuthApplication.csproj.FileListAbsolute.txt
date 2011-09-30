@@ -1,0 +1,14 @@
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\GeoStoreAuthApplication.dll
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\GeoStoreAuthApplication.pdb
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\DotNetOpenAuth.dll
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\EntityFramework.dll
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\Newtonsoft.Json.dll
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\DotNetOpenAuth.pdb
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\DotNetOpenAuth.xml
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\EntityFramework.xml
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\Newtonsoft.Json.pdb
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\Newtonsoft.Json.xml
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\bin\sr\DotNetOpenAuth.resources.dll
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\obj\Debug\GeoStoreAuthApplication.dll
+D:\personalContainer\GeoStoreAuthApplication\GeoStoreAuthApplication\obj\Debug\GeoStoreAuthApplication.pdb

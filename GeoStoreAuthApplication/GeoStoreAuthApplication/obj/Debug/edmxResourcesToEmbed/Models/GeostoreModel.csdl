@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GeoStoreDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="GeoStoreDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="aspnet_Applications" EntityType="GeoStoreDBModel.aspnet_Applications" />
+    <EntitySet Name="aspnet_Membership" EntityType="GeoStoreDBModel.aspnet_Membership" />
+    <EntitySet Name="aspnet_Paths" EntityType="GeoStoreDBModel.aspnet_Paths" />
+    <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="GeoStoreDBModel.aspnet_PersonalizationAllUsers" />
+    <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="GeoStoreDBModel.aspnet_PersonalizationPerUser" />
+    <EntitySet Name="aspnet_Profile" EntityType="GeoStoreDBModel.aspnet_Profile" />
+    <EntitySet Name="aspnet_Roles" EntityType="GeoStoreDBModel.aspnet_Roles" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="GeoStoreDBModel.aspnet_SchemaVersions" />
+    <EntitySet Name="aspnet_Users" EntityType="GeoStoreDBModel.aspnet_Users" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="GeoStoreDBModel.aspnet_WebEvent_Events" />
+    <EntitySet Name="cellLocations" EntityType="GeoStoreDBModel.cellLocation" />
+    <EntitySet Name="dataConnections" EntityType="GeoStoreDBModel.dataConnection" />
+    <EntitySet Name="entries" EntityType="GeoStoreDBModel.entry" />
+    <EntitySet Name="locations" EntityType="GeoStoreDBModel.location" />
+    <EntitySet Name="neighboringCells" EntityType="GeoStoreDBModel.neighboringCell" />
+    <EntitySet Name="serviceStates" EntityType="GeoStoreDBModel.serviceState" />
+    <EntitySet Name="signalStrengths" EntityType="GeoStoreDBModel.signalStrength" />
+    <EntitySet Name="sysdiagrams" EntityType="GeoStoreDBModel.sysdiagram" />
+    <EntitySet Name="users" EntityType="GeoStoreDBModel.user" />
+    <EntitySet Name="wifis" EntityType="GeoStoreDBModel.wifi" />
+    <EntitySet Name="vw_aspnet_Applications" EntityType="GeoStoreDBModel.vw_aspnet_Applications" />
+    <EntitySet Name="vw_aspnet_MembershipUsers" EntityType="GeoStoreDBModel.vw_aspnet_MembershipUsers" />
+    <EntitySet Name="vw_aspnet_Profiles" EntityType="GeoStoreDBModel.vw_aspnet_Profiles" />
+    <EntitySet Name="vw_aspnet_Roles" EntityType="GeoStoreDBModel.vw_aspnet_Roles" />
+    <EntitySet Name="vw_aspnet_Users" EntityType="GeoStoreDBModel.vw_aspnet_Users" />
+    <EntitySet Name="vw_aspnet_UsersInRoles" EntityType="GeoStoreDBModel.vw_aspnet_UsersInRoles" />
+    <EntitySet Name="vw_aspnet_WebPartState_Paths" EntityType="GeoStoreDBModel.vw_aspnet_WebPartState_Paths" />
+    <EntitySet Name="vw_aspnet_WebPartState_Shared" EntityType="GeoStoreDBModel.vw_aspnet_WebPartState_Shared" />
+    <EntitySet Name="vw_aspnet_WebPartState_User" EntityType="GeoStoreDBModel.vw_aspnet_WebPartState_User" />
+    <AssociationSet Name="FK__aspnet_Me__Appli__3C89F72A" Association="GeoStoreDBModel.FK__aspnet_Me__Appli__3C89F72A">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pa__Appli__75C27486" Association="GeoStoreDBModel.FK__aspnet_Pa__Appli__75C27486">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Ro__Appli__5EDF0F2E" Association="GeoStoreDBModel.FK__aspnet_Ro__Appli__5EDF0F2E">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__2882FE7D" Association="GeoStoreDBModel.FK__aspnet_Us__Appli__2882FE7D">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__UserI__3D7E1B63" Association="GeoStoreDBModel.FK__aspnet_Me__UserI__3D7E1B63">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__031C6FA4" Association="GeoStoreDBModel.FK__aspnet_Pe__PathI__031C6FA4">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__7D63964E" Association="GeoStoreDBModel.FK__aspnet_Pe__PathI__7D63964E">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__UserI__041093DD" Association="GeoStoreDBModel.FK__aspnet_Pe__UserI__041093DD">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__536D5C82" Association="GeoStoreDBModel.FK__aspnet_Pr__UserI__536D5C82">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cellLocation_entry" Association="GeoStoreDBModel.FK_cellLocation_entry">
+      <End Role="entry" EntitySet="entries" />
+      <End Role="cellLocation" EntitySet="cellLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_neighboringCell_cellLocation" Association="GeoStoreDBModel.FK_neighboringCell_cellLocation">
+      <End Role="cellLocation" EntitySet="cellLocations" />
+      <End Role="neighboringCell" EntitySet="neighboringCells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DataConnection_entry" Association="GeoStoreDBModel.FK_DataConnection_entry">
+      <End Role="entry" EntitySet="entries" />
+      <End Role="dataConnection" EntitySet="dataConnections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_location_entry" Association="GeoStoreDBModel.FK_location_entry">
+      <End Role="entry" EntitySet="entries" />
+      <End Role="location" EntitySet="locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceState_entry" Association="GeoStoreDBModel.FK_ServiceState_entry">
+      <End Role="entry" EntitySet="entries" />
+      <End Role="serviceState" EntitySet="serviceStates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_signalStrength_entry" Association="GeoStoreDBModel.FK_signalStrength_entry">
+      <End Role="entry" EntitySet="entries" />
+      <End Role="signalStrength" EntitySet="signalStrengths" />
+    </AssociationSet>
+    <AssociationSet Name="FK_wifi_entry" Association="GeoStoreDBModel.FK_wifi_entry">
+      <End Role="entry" EntitySet="entries" />
+      <End Role="wifi" EntitySet="wifis" />
+    </AssociationSet>
+    <AssociationSet Name="aspnet_UsersInRoles" Association="GeoStoreDBModel.aspnet_UsersInRoles">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="GeoStoreDBModel.FK__aspnet_Me__Appli__3C89F72A" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="GeoStoreDBModel.FK__aspnet_Pa__Appli__75C27486" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="GeoStoreDBModel.FK__aspnet_Ro__Appli__5EDF0F2E" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GeoStoreDBModel.FK__aspnet_Us__Appli__2882FE7D" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+    <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="GeoStoreDBModel.FK__aspnet_Me__Appli__3C89F72A" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GeoStoreDBModel.FK__aspnet_Me__UserI__3D7E1B63" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Paths">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="PathId" Type="Guid" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredPath" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="GeoStoreDBModel.FK__aspnet_Pa__Appli__75C27486" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="GeoStoreDBModel.FK__aspnet_Pe__PathI__031C6FA4" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+    <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="GeoStoreDBModel.FK__aspnet_Pe__PathI__7D63964E" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationAllUsers">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="PathId" Type="Guid" Nullable="false" />
+    <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="GeoStoreDBModel.FK__aspnet_Pe__PathI__7D63964E" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationPerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="PathId" Type="Guid" />
+    <Property Name="UserId" Type="Guid" />
+    <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="GeoStoreDBModel.FK__aspnet_Pe__PathI__031C6FA4" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GeoStoreDBModel.FK__aspnet_Pe__UserI__041093DD" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="PropertyNames" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PropertyValuesString" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PropertyValuesBinary" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GeoStoreDBModel.FK__aspnet_Pr__UserI__536D5C82" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="RoleId" Type="Guid" Nullable="false" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="GeoStoreDBModel.FK__aspnet_Ro__Appli__5EDF0F2E" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GeoStoreDBModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="GeoStoreDBModel.FK__aspnet_Us__Appli__2882FE7D" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="GeoStoreDBModel.FK__aspnet_Me__UserI__3D7E1B63" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="GeoStoreDBModel.FK__aspnet_Pe__UserI__041093DD" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+    <NavigationProperty Name="aspnet_Profile" Relationship="GeoStoreDBModel.FK__aspnet_Pr__UserI__536D5C82" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="GeoStoreDBModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Events">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="true" />
+    <Property Name="EventTimeUtc" Type="DateTime" Nullable="false" />
+    <Property Name="EventTime" Type="DateTime" Nullable="false" />
+    <Property Name="EventType" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="EventSequence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+    <Property Name="EventOccurrence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+    <Property Name="EventCode" Type="Int32" Nullable="false" />
+    <Property Name="EventDetailCode" Type="Int32" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationVirtualPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MachineName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RequestUrl" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="ExceptionType" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Details" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cellLocation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="type" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="cid" Type="Int32" />
+    <Property Name="lac" Type="Int32" />
+    <Property Name="baseStationId" Type="Int32" />
+    <Property Name="baseStationLatitude" Type="Int32" />
+    <Property Name="baseStationLongitude" Type="Int32" />
+    <Property Name="networkId" Type="Int32" />
+    <Property Name="systemId" Type="Int32" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="entryId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="entry" Relationship="GeoStoreDBModel.FK_cellLocation_entry" FromRole="cellLocation" ToRole="entry" />
+    <NavigationProperty Name="neighboringCells" Relationship="GeoStoreDBModel.FK_neighboringCell_cellLocation" FromRole="cellLocation" ToRole="neighboringCell" />
+  </EntityType>
+  <EntityType Name="dataConnection">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="state" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="networkType" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="entryId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="entry" Relationship="GeoStoreDBModel.FK_DataConnection_entry" FromRole="dataConnection" ToRole="entry" />
+  </EntityType>
+  <EntityType Name="entry">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="deviceId" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="externalTimestamp" Type="Int64" Nullable="false" />
+    <Property Name="userId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="cellLocations" Relationship="GeoStoreDBModel.FK_cellLocation_entry" FromRole="entry" ToRole="cellLocation" />
+    <NavigationProperty Name="dataConnections" Relationship="GeoStoreDBModel.FK_DataConnection_entry" FromRole="entry" ToRole="dataConnection" />
+    <NavigationProperty Name="locations" Relationship="GeoStoreDBModel.FK_location_entry" FromRole="entry" ToRole="location" />
+    <NavigationProperty Name="serviceStates" Relationship="GeoStoreDBModel.FK_ServiceState_entry" FromRole="entry" ToRole="serviceState" />
+    <NavigationProperty Name="signalStrengths" Relationship="GeoStoreDBModel.FK_signalStrength_entry" FromRole="entry" ToRole="signalStrength" />
+    <NavigationProperty Name="wifis" Relationship="GeoStoreDBModel.FK_wifi_entry" FromRole="entry" ToRole="wifi" />
+  </EntityType>
+  <EntityType Name="location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="accuracy" Type="Double" />
+    <Property Name="altitude" Type="Double" />
+    <Property Name="bearing" Type="Double" />
+    <Property Name="latitude" Type="Double" Nullable="false" />
+    <Property Name="longitude" Type="Double" Nullable="false" />
+    <Property Name="provider" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="speed" Type="Double" />
+    <Property Name="extras" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="measurementTime" Type="DateTime" Nullable="false" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="entryID" Type="Int64" Nullable="false" />
+    <Property Name="processingMethod" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="deviceType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="deviceId" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="sensorType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="sensorModel" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IntersensorAgreement" Type="Boolean" />
+    <Property Name="solutionConfidence" Type="Double" />
+    <NavigationProperty Name="entry" Relationship="GeoStoreDBModel.FK_location_entry" FromRole="location" ToRole="entry" />
+  </EntityType>
+  <EntityType Name="neighboringCell">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="cid" Type="Int32" />
+    <Property Name="lac" Type="Int32" />
+    <Property Name="psc" Type="Int32" />
+    <Property Name="rssi" Type="Int32" />
+    <Property Name="networkType" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cellLocationId" Type="Int64" Nullable="false" />
+    <Property Name="entryId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="cellLocation" Relationship="GeoStoreDBModel.FK_neighboringCell_cellLocation" FromRole="neighboringCell" ToRole="cellLocation" />
+  </EntityType>
+  <EntityType Name="serviceState">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="isManualSelection" Type="Boolean" />
+    <Property Name="operatorAlphaLong" Type="String" MaxLength="16" Unicode="true" FixedLength="true" />
+    <Property Name="operatorAlphaShort" Type="String" MaxLength="8" Unicode="true" FixedLength="true" />
+    <Property Name="operatorNumeric" Type="String" MaxLength="6" Unicode="true" FixedLength="true" />
+    <Property Name="roaming" Type="Boolean" />
+    <Property Name="state" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="entryID" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="entry" Relationship="GeoStoreDBModel.FK_ServiceState_entry" FromRole="serviceState" ToRole="entry" />
+  </EntityType>
+  <EntityType Name="signalStrength">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="cdmaDbm" Type="Int32" />
+    <Property Name="cdmaEcio" Type="Int32" />
+    <Property Name="evdoDbm" Type="Int32" />
+    <Property Name="evdoEcio" Type="Int32" />
+    <Property Name="evdoSnr" Type="Int32" />
+    <Property Name="gsmBitErrorRate" Type="Int32" />
+    <Property Name="gsmSingalStrength" Type="Int32" />
+    <Property Name="isGsm" Type="Boolean" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="entryId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="entry" Relationship="GeoStoreDBModel.FK_signalStrength_entry" FromRole="signalStrength" ToRole="entry" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="open_id" Type="String" MaxLength="256" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="wifi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="ssid" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="capabilities" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="frequency" Type="Int32" />
+    <Property Name="level" Type="Int32" />
+    <Property Name="bssid" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="entryID" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="entry" Relationship="GeoStoreDBModel.FK_wifi_entry" FromRole="wifi" ToRole="entry" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationName" />
+      <PropertyRef Name="LoweredApplicationName" />
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_MembershipUsers">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="PasswordFormat" />
+      <PropertyRef Name="IsApproved" />
+      <PropertyRef Name="IsLockedOut" />
+      <PropertyRef Name="CreateDate" />
+      <PropertyRef Name="LastLoginDate" />
+      <PropertyRef Name="LastPasswordChangedDate" />
+      <PropertyRef Name="LastLockoutDate" />
+      <PropertyRef Name="FailedPasswordAttemptCount" />
+      <PropertyRef Name="FailedPasswordAttemptWindowStart" />
+      <PropertyRef Name="FailedPasswordAnswerAttemptCount" />
+      <PropertyRef Name="FailedPasswordAnswerAttemptWindowStart" />
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="IsAnonymous" />
+      <PropertyRef Name="LastActivityDate" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+    <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Profiles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="LastUpdatedDate" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="DataSize" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Roles">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="RoleName" />
+      <PropertyRef Name="LoweredRoleName" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="RoleId" Type="Guid" Nullable="false" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Users">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="LoweredUserName" />
+      <PropertyRef Name="IsAnonymous" />
+      <PropertyRef Name="LastActivityDate" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="RoleId" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_WebPartState_Paths">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="PathId" />
+      <PropertyRef Name="Path" />
+      <PropertyRef Name="LoweredPath" />
+    </Key>
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="PathId" Type="Guid" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LoweredPath" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_WebPartState_Shared">
+    <Key>
+      <PropertyRef Name="PathId" />
+      <PropertyRef Name="LastUpdatedDate" />
+    </Key>
+    <Property Name="PathId" Type="Guid" Nullable="false" />
+    <Property Name="DataSize" Type="Int32" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_WebPartState_User">
+    <Key>
+      <PropertyRef Name="LastUpdatedDate" />
+    </Key>
+    <Property Name="PathId" Type="Guid" />
+    <Property Name="UserId" Type="Guid" />
+    <Property Name="DataSize" Type="Int32" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__Appli__3C89F72A">
+    <End Role="aspnet_Applications" Type="GeoStoreDBModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="GeoStoreDBModel.aspnet_Membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pa__Appli__75C27486">
+    <End Role="aspnet_Applications" Type="GeoStoreDBModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Paths" Type="GeoStoreDBModel.aspnet_Paths" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Paths">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Ro__Appli__5EDF0F2E">
+    <End Role="aspnet_Applications" Type="GeoStoreDBModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Roles" Type="GeoStoreDBModel.aspnet_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__2882FE7D">
+    <End Role="aspnet_Applications" Type="GeoStoreDBModel.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Users" Type="GeoStoreDBModel.aspnet_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Me__UserI__3D7E1B63">
+    <End Role="aspnet_Users" Type="GeoStoreDBModel.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="GeoStoreDBModel.aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__031C6FA4">
+    <End Role="aspnet_Paths" Type="GeoStoreDBModel.aspnet_Paths" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="GeoStoreDBModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__7D63964E">
+    <End Role="aspnet_Paths" Type="GeoStoreDBModel.aspnet_Paths" Multiplicity="1" />
+    <End Role="aspnet_PersonalizationAllUsers" Type="GeoStoreDBModel.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationAllUsers">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__UserI__041093DD">
+    <End Role="aspnet_Users" Type="GeoStoreDBModel.aspnet_Users" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="GeoStoreDBModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__536D5C82">
+    <End Role="aspnet_Users" Type="GeoStoreDBModel.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Profile" Type="GeoStoreDBModel.aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cellLocation_entry">
+    <End Role="entry" Type="GeoStoreDBModel.entry" Multiplicity="1" />
+    <End Role="cellLocation" Type="GeoStoreDBModel.cellLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="entry">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cellLocation">
+        <PropertyRef Name="entryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_neighboringCell_cellLocation">
+    <End Role="cellLocation" Type="GeoStoreDBModel.cellLocation" Multiplicity="1" />
+    <End Role="neighboringCell" Type="GeoStoreDBModel.neighboringCell" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cellLocation">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="neighboringCell">
+        <PropertyRef Name="cellLocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DataConnection_entry">
+    <End Role="entry" Type="GeoStoreDBModel.entry" Multiplicity="1" />
+    <End Role="dataConnection" Type="GeoStoreDBModel.dataConnection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="entry">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dataConnection">
+        <PropertyRef Name="entryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_location_entry">
+    <End Role="entry" Type="GeoStoreDBModel.entry" Multiplicity="1" />
+    <End Role="location" Type="GeoStoreDBModel.location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="entry">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="location">
+        <PropertyRef Name="entryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceState_entry">
+    <End Role="entry" Type="GeoStoreDBModel.entry" Multiplicity="1" />
+    <End Role="serviceState" Type="GeoStoreDBModel.serviceState" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="entry">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="serviceState">
+        <PropertyRef Name="entryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_signalStrength_entry">
+    <End Role="entry" Type="GeoStoreDBModel.entry" Multiplicity="1" />
+    <End Role="signalStrength" Type="GeoStoreDBModel.signalStrength" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="entry">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="signalStrength">
+        <PropertyRef Name="entryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_wifi_entry">
+    <End Role="entry" Type="GeoStoreDBModel.entry" Multiplicity="1" />
+    <End Role="wifi" Type="GeoStoreDBModel.wifi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="entry">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="wifi">
+        <PropertyRef Name="entryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="aspnet_UsersInRoles">
+    <End Role="aspnet_Roles" Type="GeoStoreDBModel.aspnet_Roles" Multiplicity="*" />
+    <End Role="aspnet_Users" Type="GeoStoreDBModel.aspnet_Users" Multiplicity="*" />
+  </Association>
+</Schema>

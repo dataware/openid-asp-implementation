@@ -1,0 +1,29 @@
+﻿/*form.RegisterOpenid {border-style:none}*/
+form.OpenidUser { border-style:none}
+div.openid {border-style:solid; border-width:1px; border-color:ActiveBorder; height:auto; padding:10px;}
+div.openid fieldset {border-style:none;}
+div.openid img {border-style:none;}
+
+div.openid ul { text-align:left; list-style-type:none; overflow:hidden; margin:0px; padding:0px;}
+div.openid ul li {float:left; padding:5px;}
+div.openid ul li span {padding:0 1em 0 3px}
+div.openid fieldset {clear:both; padding:0.5em 0}
+div.openid div+fieldset {display:none;}
+div.openid label {display:block; padding:0.5em 0; clear:both; font-weight:bold; font-size:larger; margin-bottom:.5em}
+input[name=openid_username] {width:8em}
+input[name=openid_identifier] {width:18em}
+div.openid ul li.highlight { -moz-border-radius:4px; -webkit-border-radius:4px; background-color: #FD6}
+div.openid fieldset div {font-family:arial;-moz-border-radius:4px; -webkit-border-radius:4px; 
+                          background: #DCDCDC url(../images/fadegrey.png); padding:10px;display:block}
+div.openid input[type='submit'] {margin-left:1em;}
+.openid_logo{color:#F7931E;padding:6px 0px 8px 28px; background: url(../images/openidico.png) no-repeat}
+#openid_login{float:left; font-size:larger; width:30%; margin:2em 1em; text-align:center}
+#openid_login div{margin-top:0.5em}
+#openid_login div+span{font-size:smaller}
+
+.UserNameValidation{display:none;}
+.EmailAddressValidation{display:none;}
+.caption {margin-top:10px;display:block;font-size:medium}
+fieldset {margin-bottom:0px; padding-bottom:0px;}
+.redirection_caption{font-size:medium; color:Blue;}
+.redirection_title {font-weight:bold;}
